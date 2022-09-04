@@ -1,0 +1,109 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Julien RITON}
+\title{Équations différentielles - Exercices}
+\date{05/09/2022}
+\begin{document}
+
+\maketitle
+
+\section{Équations différentielles linéaires à coefficients constants}
+
+\subsection{Équations différentielles linéaires d'ordre 1}
+\subsubsection{Exercice}
+Résoudre l'équation suivante (sur l'intervalle $I=\mathbb{R}$):
+$$y'=-y.$$
+
+\subsubsection{Exercice}
+Résoudre l'équation suivante (sur l'intervalle $I=\mathbb{R}$):
+$$4y'+y=0.$$
+
+\subsubsection{Exercice}
+Résoudre l'équation $$y'+3y=0$$.
+
+Donner la solution qui prend la valeur 4 au point $x_0=2$.
+
+\subsubsection{Exercice}
+On considère l'équation différentielle 
+\begin{equation}\label{eq1}
+y'(x)+2y(x)=\exp(3x).
+\end{equation}
+
+Résoudre l'équation différentielle intermédiaire obtenue en substituant dans (\ref{eq1}) l'inconnue $y$ en l'inconnue $z$ définie par $y=z+\dfrac{1}{5}\exp(3x)$.
+
+En déduire les solutions de $\left(E\right)$.
+
+\subsubsection{Exercice}
+On considère l'équation différentielle $$y'(x)+2y(x)=3*\exp(3x) \left(E\right)$$.
+\begin{enumerate}
+\item
+Déterminer le réel $\alpha$ tel que la fonction $y_0$ définie par $y_0(x)=\alpha\exp(-3x)$
+soit solution de $(E)$.
+\item
+Montrer que $y$ est solution de $(E)$ si et seulement si $y-y_0$ est solution d'une équation différentielle homogène du premier ordre que l'on déterminera.
+\item
+Déterminer alors toutes les solutions de $(E)$ et préciser celle qui est nulle en $0$.
+\end{enumerate}
+
+
+\subsubsection{Exercice}
+Soit $f$ une fonction définie et dérivable sur $\mathbb{R}$ dont la dérivée ne s'annule pas sur $\mathbb{R}$.
+Soit $\mathcal{C}$ la courbe représentative de $f$ dans un plan rapporté à un repère orthonormé $(0,\vec{i},\vec{j})$ et soit $M$ un point de $\mathcal{C}$.
+On ote $P$ la projection orthogonale de $M$ sur l'axe $(x'x)$ et $Q$ l'intersection de la tangente en $M$ à $\mathcal{C}$ avec l'axe $(x'x)$.
+\begin{enumerate}
+\item
+Montrer que $\overline{PQ}=-1$ pour tout point $M$ de $\mathcal{C}$ si et seulement si $f$ satidfait à une équation différentielle que l'on détermina.
+\item
+Déterminer les fonctions $f$ vérifiant $\overline{PQ}=-1$ pour tout point $M$ de $\mathcal{C}$.
+\end{enumerate}
+
+
+\subsubsection{Exercice}
+Soit $f$ une fonction définie et dérivable sur $\mathbb{R}$ et vérifiant :
+\begin{equation}
+\label{eq2}
+f(x+t)=f(x)*f(t) \; \forall (x,t) \in \mathbb{R}.
+\end{equation}
+
+\begin{enumerate}
+\item
+Montrer que si $f$ vérifie (\ref{eq2}), alors $f$ est solution d'une équation différentielle d'ordre 1 que vous établirez (dériver par rapport à $t$, puis prendre $t=0$).
+
+\item
+Déterminer les fonctions $f$ satisfaisant à la relation $\ref{eq2}$.
+\end{enumerate}
+
+\subsection{Équations différentielles linéaires d'ordre 2}
+
+\subsubsection{Exercice}
+Résoudre l'équation suivante (sur l'intervalle $I=\mathbb{R}$):
+$$2y''+y'-y=0.$$
+
+\subsubsection{Exercice}
+Résoudre l'équation suivante (sur l'intervalle $I=\mathbb{R}$):
+$$16y'-8y'-y=0.$$
+
+\subsubsection{Exercice}
+Résoudre l'équation suivante (sur l'intervalle $I=\mathbb{R}$):
+$$y''=-5y.$$
+
+\subsubsection{Exercice}
+Résoudre l'équation suivante (sur l'intervalle $I=\mathbb{R}$):
+$$y''+y'+\dfrac{5}{2}y=0.$$
+
+\subsubsection{Exercice}
+\begin{enumerate}
+\item
+Résoudre l'équation suivante (sur l'intervalle $I=\mathbb{R}$):
+$$y''-8y'+15y=0.$$
+\item
+Déterminer la solution $y_1$ qui vérifie $y_1(0)=1$ et ${y'}_1(0)=2$.
+\end{enumerate}
+
+\end{document}
