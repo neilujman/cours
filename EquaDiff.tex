@@ -1,0 +1,176 @@
+\documentclass[11pt]{beamer}
+\usetheme{Warsaw}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\author{Julien RITON}
+\title{Les équations différentielles}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+\institute{UB - I.U.T. de Bourgogne site d'Auxerre} 
+\date{05/09/2022} 
+\subject{B.U.T. Génie Civil - Construction Durable} 
+
+\newtheorem{dfn}{Définition}
+\newtheorem{thm}{Théorème}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+\begin{frame}{L'art des mathématiques}
+\begin{itemize}
+\item
+Au lycée : c'est encore du bricolage "simple".
+\item
+Au niveau des études supérieurs : le bricolage devient plus un art ou du génie.
+De plus, il faut chercher à conceptualiser.
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Niveau de conceptualisation}
+\begin{itemize}
+
+\item
+Fondamental:
+\item
+Application:
+
+\end{itemize}
+
+\end{frame}
+
+
+\section{Les fondations}
+\begin{frame}{Les fondations}
+\begin{itemize}
+\item
+L'ensemble des Mathématiques reposent sur fondations bien définies.
+\item
+Ces fondations sont les axiomes, ce sont des théorèmes de bases mais dont la portée est générale et que nous démontrons pas.
+\item
+Les théorèmes, propositions, lemmes et corrolaires sont des briques qui reposent sur les axiomes.
+\item
+Le tout est cimenté par la logique.
+
+
+\end{itemize}
+\end{frame}
+
+
+\subsection{Les objets}
+
+\subsection{Les axiomes}
+Nous n'allons pas énumérées tout les axiomes.
+
+Le plus célèbre est l'axiome du choix.
+
+Même pour travailler avec des nombres entiers, nous avons besoin d'axiomes.
+
+
+
+
+\subsection{La logique}
+\subsubsection{L'implication}
+\begin{frame}{L'implication}
+Une affirmation mathématique $\mathcal{P}$ implique une autre affirmation $\mathcal{Q}$:
+dès que $mathcal{P}$ est vraie, $mathcal{Q}$ est aussi vraie.
+
+$$\mathcal{P}\Rightarrow\mathcal{Q}$$
+\end{frame}
+
+
+\subsection{Les propositions}
+\begin{frame}{Les théorèmes}
+Le plus souvent 
+\end{frame}
+
+
+\section{\'{E}qua diff linéaire d'ordre 1 à coef constants}
+
+\subsection{Une équation}
+\begin{frame}{Équation}
+Une équation n'est pas à confondre avec une identité.
+\begin{dfn}
+Une \textbf{identité} est une écriture sous forme d'égalité qui est vraie pour tous les objets présents dans celle-ci.
+\end{dfn}
+Exemple : l'écriture $a^2-b^2=(a-b)(a+b)$ est une identité
+\end{frame}
+% =====
+\begin{frame}{Équation la plus simple}
+\begin{dfn}
+Soit $a$ un nombre réel.\\
+Une solution de l'équation différentielle 
+$$y'-ay=0$$
+est une fonction $f:\mathbb{R}\rightarrow\mathbb{R}$ dérivable et telle que $f'-af=0$, c'est-à-dire
+$$f'(x)-af(x)=0 \; pour\; tout\; x\; dans \; \mathbb{R}.$$ 
+\end{dfn}
+\end{frame}
+% =====
+\begin{frame}{Solutions de $y'-ay=0$}
+\begin{thm}
+Les solutions de l'équation différentielle $y'-ay=0$ sont les fonctions $f:\mathbb{R}\rightarrow\mathbb{R}$ définies par 
+$$f(x)=\lambda \exp(ax)  \; \forall x \in \mathbb{R}$$
+pour un $\lambda\in\mathbb{R}$ donné.
+\end{thm}
+\begin{proof}
+On vérifie bien que les $f$ solutionnent l'équation.
+Réciproquement chaque solution s'exprime comme la formule.
+\end{proof}
+
+\end{frame}
+
+% =====
+\begin{frame}{Équation encore assez simple}
+\begin{dfn}
+Soit $a$ un nombre réel.\\
+Une solution de l'équation différentielle 
+$$y''+ay=0$$
+est une fonction $f:\mathbb{R}\rightarrow\mathbb{R}$ dérivable et telle que $f''+af=0$, c'est-à-dire
+$$f''(x)+af(x)=0 \; pour\; tout\; x\; dans \; \mathbb{R}.$$ 
+\end{dfn}
+\end{frame}
+% =====
+\begin{frame}{Solutions de $y''+ay=0$}
+\begin{thm}
+Les solutions de l'équation différentielle $y''+ay=0$ sont les fonctions $f:\mathbb{R}\rightarrow\mathbb{R}$ définies par 
+\begin{itemize}
+\item si $a=0$ : 
+$f(x)=\lambda x +\mu\; \forall x \in \mathbb{R}$, 
+\item si $a>0$ : 
+$f(x)=\lambda \cos(\alpha x )+\mu \sin(\alpha x )\; \forall x \in \mathbb{R}$,
+ avec $\alpha=\sqrt{a}$,
+\item si $a<0$ :
+$f(x)=\lambda \exp(\alpha x) +\mu \exp(-\alpha x) \; \forall x \in \mathbb{R}$,
+ avec $\alpha=\sqrt{-a}$,
+
+\end{itemize}
+pour $\lambda\in\mathbb{R}$ et $\mu\in\mathbb{R}$ donnés.
+
+\end{thm}
+\begin{proof}
+On vérifie bien que les $f$ solutionnent l'équation.
+Réciproquement chaque solution s'exprime comme la formule.
+\end{proof}
+
+\end{frame}
+
+% =====
+
+
+
+
+\end{document}
