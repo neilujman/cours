@@ -1,0 +1,43 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Julien RITON}
+\title{construction}
+
+\newtheorem{dfn}{Définition}
+\newtheorem{thm}{Théorème}
+\usepackage{graphicx}
+\begin{document}
+\section{Équation différentielle - généralités}
+
+On considère deux intervalles ouverts $I$ et $J$ de nombres réels.
+$I\subset \mathbb{R}$ et $J\subset \mathbb{R}$.
+
+\begin{dfn}
+Le \textit{produit cartésien} de l'intervalle $I$ par l'intervalle $J$ est la partie du plan
+$\mathbb{R}^2$
+correspondant aux points de coordonnées $(x,y)$ avec $x\in I$ et $y\in J$.
+C'est-à-dire l'ensemble $\left\lbrace (x,y) \in \mathbb{R}^2:\; x\in I,\, y\in J \right\rbrace$.
+On note $I\times J$.
+\end{dfn}
+\begin{figure}[hbtp]
+\centering
+\includegraphics[scale=1]{produit_cartesien.png}
+\caption{Le produit cartésien}
+\end{figure}
+
+\begin{dfn}
+Une fonction $F$ est dite à deux variables si elle est définie sur un produit cartésien de deux intervalles.
+
+Si les deux intervalles sont $I$ et $J$ et $(x,y)\in I \times J$, on note 
+$$F:I\times J \rightarrow \mathbb{R}$$
+et $F(x,y)$ la valeur de $F$ au point $(x,y)$.
+\end{dfn}
+
+
+\end{document}
