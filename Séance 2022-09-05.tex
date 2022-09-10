@@ -1,0 +1,55 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Julien RITON}
+\title{Sur la séance du 05/09/2022}
+
+\begin{document}
+\maketitle
+
+\section{Équations différentielles linéaires à coefficients constants}
+\subsection{Équation $y'-ay=0$}
+Soit $a$ un nombre réel.
+Une solution de l'équation différentielle 
+$$y'-ay=0$$
+est une fonction $f:\mathbb{R}\rightarrow \mathbb{R}$ dérivable et telle que $f'-af=0$,
+c'est-à-dire
+$$f'(x) - a f(x) = 0 \qquad \forall x\in \mathbb{R}.$$
+
+
+La fonction nulle, définie par $f(x)=0$ quel que soit $ x\in \mathbb{R}$, est solution de l'équation différentielle.
+Nous avons aussi une autre solution: la fonction $x\mapsto \exp(ax)$\footnote{Nous pouvons aussi noter $\exp(ax)$ par $e^{ax}$.}. En effet, si l'on pose $u(x)=\exp(ax)$, alors il vient $u'(x)=a \exp(ax) = a u(x)$ pour tout $x\in\mathbb{R}$, ou encore $u'-au=0$.
+
+\paragraph{Théorème}
+Les solutions de l'équation différentielle $y'-ay=0$ sont les fonctions $x\mapsto \lambda \exp(ax)$, où $\lambda\in\mathbb{R}$.
+
+\subparagraph{Démonstration}
+Objet de la séance du 12/09/2022.
+
+
+\subsection{Équation différentielle $y''+py'+qy=0$}
+Soient $p$ et $q$ des nombres réels.
+Une solution de l'équation différentielle $y''+py'+qy=0$ est une fonction $f:\mathbb{R}\rightarrow \mathbb{R}$ deux fois dérivable et telle que $f''+pf'+qf=0$, 
+c'est-à-dire
+$$f''(x) + p f'(x) + q f(x) = 0 \qquad \forall x\in \mathbb{R}.$$
+
+Considérons le polynôme $P\in\mathbb{R}[X]$ défini par $P=X^2+pX+q$.
+
+\paragraph{Théorème}
+\begin{itemize}
+\item
+Si le polynôme $P$ a deux racines réelles distinctes $r$ et $s$, les solutions de l'équation différentielle sont les fonctions $x\mapsto \lambda \exp(rx) + \mu \exp(sx)$ où $\lambda$ et $\mu$ sont des nombres réelles.
+\item
+Si le polynôme $P$ a une racine réelle doubles $r$, les solutions de l'équation différentielle sont les fonctions $x\mapsto (\lambda x+ \mu )\exp(rx)$ où $\lambda$ et $\mu$ sont des nombres réelles.
+\item
+Si le polynôme $P$ a deux racines complexes non réelles $r+i\omega$ et $r+i\omega$ où $r$ et $\omega$ sont réels, alors les solutions de l'équation différentielle sont les fonctions $x\mapsto (\lambda \cos(\omega x) + \sin(\omega x) ) \exp(rx)$ où $\lambda$ et $\mu$ sont des nombres réelles. 
+\end{itemize}
+\subparagraph{Démonstration}
+Objet de la séance du 12/09/2022.
+\end{document}
