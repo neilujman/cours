@@ -8,16 +8,26 @@
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Julien RITON}
 \title{Sur les équations différentielles}
-
+\date{12/09/2022}
 \newtheorem{dfn}{Définition}
 \newtheorem{thm}{Théorème}
 \usepackage{graphicx}
 \begin{document}
 \maketitle
-\section{Équation différentielle - une première prise en main}
+\section{Retour sur la dérivation}
+\subsection{Fonction numérique de la variable réelle}
+Soient $I$ un intervalle ouvert, $f:I\rightarrow \mathbb{R}$ une fonction et $x_0$ un élément de $I$.
+\begin{dfn}
+On dit que $f$ est dérivable en $x_0$ si $\dfrac{f(x)-f(x_0)}{x-x_0}$ a une limite finie quand $x$ tend vers $x_0$.
 
-\subsection{Introduction}
-\subsubsection{Quelques rappels}
+La limite $\lim_{x\rightarrow x_0} \dfrac{f(x)-f(x_0)}{x-x_0}$ est notée $f'(x_0)$ et s'appelle le nombre dérivée de $f$ en $x_0$.
+
+On dit que $f$ est dérivable sur $I$ si, quel que soit $x_0\in I$, $f$ est dérivable en $x_0$.
+
+Dans ce, la fonction $f':I\rightarrow \mathbb{R}$ qui à $x$ associe $f'(x)$, s'appelle la dérivée de $f$.
+\end{dfn}
+
+
 \paragraph{L'usage de la dérivation}
 \subparagraph{La dérivation}
 Nous rappelons la définition de la dérivée d'une fonction $f$ en un point $x$.
@@ -30,37 +40,14 @@ On a aussi les notations suivantes:
 $$f'x), \; \dfrac{df(x)}{dx} $$
 
 
+\subsection{Fonctions vectorielles de la variable réelle}
+Soit $I$ un intervalle de $\mathbb{R}$ et soient $u$ et $v$ des fonctions numériques définies sur $I$.
 
-
-
-Souvent, quand on étudie un phénomène qui évolue avec le temps, on choisit comme variable le temps que l'on note par $t$. Les valeurs liées au temps peuvent être les coordonnées,
-
- $(x,y)$ (respectivement $(x,y,z)$) d'un point $M$ du plan (respectivement de l'espace).
-On peut noter la dérivée de $x$, $y$ par $ kkkk$
-\subsection{Définition}
+Si $t$ appartient à $I$, alors $u(t)$ et $v(t)$ sont des nombres réelles et le couple $(u(t),v(t))$ est un élément de $\mathbb{R}^2$
 \begin{dfn}
-Une écriture faisant apparaître une relation entre une fonction, sa variable et au moins l'une de ses dérivées est appelée une équation différentielle.
+On définit une fonction $f:I\rightarrow \mathbb{R}^2$
 \end{dfn}
-\paragraph{Exemple d'écriture}
 
-\subparagraph{$y'=y$}
-L'écriture $y'=y$ est une équation différentielle. Cette écriture fait apparaître une relation entre UNE (et non LA) fonction $y$
-et sa dérivée $y'$.
-
-\subparagraph{$y'= 3x+1$}
-L'écriture $y'= 3x+1$ est une équation différentielle. On y voit une relation entre la dérivée d'une fonction $y$ et la variable $x$ de $y$. Plus rigoureusement, on devrait écrire $y'(x)=3x+1$.
-
-
-\subsection{L'équation $y'-ay=0$}
-
-
-
-
-\begin{dfn}
-L'écriture suivante, avec $a\in\mathbb{R}$,
-$$y'-ay=0$$
-est une équation différentielle dite linéaire du premier ordre homogène à coefficient constant.
-\end{dfn}
 
 \section{Les équations différentielles}
 
